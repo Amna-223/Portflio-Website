@@ -1,0 +1,261 @@
+.hero {
+  padding: 8px 60px 48px 60px;
+  background-color: var(--cream);
+}
+
+.hero-edition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.hero-edition-star {
+  color: var(--red);
+  font-size: 1rem;
+}
+
+.hero-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--black);
+  margin: 10px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding: 28px 0 40px 0;
+}
+
+.hero-left {
+  flex: 0 0 44%;
+  padding-left: 0;
+  padding-top: 24px;
+}
+
+.hero-greeting-line {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.hero-greeting {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--black);
+}
+
+.hero-greeting-bar {
+  height: 0.5px;
+  width: 100px;
+  background-color: var(--black);
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.hero-name-dot {
+  color: var(--red);
+}
+
+.hero-role {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.hero-role-bar {
+  width: 4px;
+  height: 20px;
+  background-color: var(--red);
+  flex-shrink: 0;
+}
+
+.hero-role p {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.hero-tagline {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--black);
+  max-width: 460px;
+  margin-bottom: 36px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.btn-primary {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--red);
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--black);
+}
+
+.btn-secondary {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.hero-right {
+  flex: 0 0 34%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 470px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+}
+
+.hero-image-bg {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-35%);
+  width: 300px;
+  height: 430px;
+  border-radius: 170px 170px 0 0;
+  background-color: #B22234;
+  /* background-color: var(--red); */
+  z-index: 1;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+  transform: translateX(-57%);
+  width: 345px;
+  height: 470px;
+  z-index: 2;
+  overflow: visible;
+}
+
+.hero-image-inner{
+  width:100%;
+  height:100%;
+  transform:translateX(34px);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position:top;
+}
+.hero-right-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  flex: 0 0 8%;
+  padding-top: 60px;
+}
+
+.hero-vertical-text {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 28px;
+}
+
+.hero-v-line {
+  width: 1px;
+  height: 40px;
+  background-color: #c8bfb0;
+  margin: 0 auto;
+}
+
+.hero-red-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--red);
+  margin: 18px auto;
+}
+
+.hero-dot-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 30px auto;
+}
+
+.hero-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #c8bfb0;
+  display: block;
+}
+
+.hero-circle-text {
+  margin: 35px auto 28px auto;
+  opacity: 0.7;
+}
