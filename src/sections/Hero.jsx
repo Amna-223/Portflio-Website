@@ -56,7 +56,6 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="hero-divider"></div>
         </section>
     )
 }

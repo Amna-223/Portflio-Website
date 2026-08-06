@@ -6,8 +6,13 @@ const About = () => {
     <section className="about" id="about">
 
       <div className="about-header">
-        <h2 className="about-title">About</h2>
-        <div className="about-divider"></div>
+        <div className="about-intro-line">
+          <div className="about-intro-hr"></div>
+          <span className="about-intro-diamond">◆</span>
+          <div className="about-intro-hr"></div>
+          <span className="about-intro-text">A LITTLE INTRO</span>
+        </div>
+        <h2 className="about-title">About <span className="about-title-red">me.</span></h2>
       </div>
 
       <div className="about-grid">
@@ -74,7 +79,7 @@ const About = () => {
 
       </div>
 
-      <div className="about-divider"></div>
+      {/* <div className="about-divider"></div> */}
 
     </section>
   )
