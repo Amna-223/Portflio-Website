@@ -1,0 +1,328 @@
+.certs {
+  padding: 60px 60px 80px 60px;
+  background-color: var(--cream);
+}
+
+/* ── Header ── */
+.certs-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 8px;
+}
+
+.certs-header-left { flex-shrink: 0; }
+
+.certs-intro-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.certs-intro-hr {
+  height: 1px;
+  width: 40px;
+  background-color: var(--border);
+}
+
+.certs-intro-diamond {
+  color: var(--red);
+  font-size: 0.6rem;
+}
+
+.certs-intro-text {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #8b1a2e;
+  background-color: #f5c0c0;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.certs-title {
+  font-family: var(--serif);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.certs-title-dot { color: var(--red); }
+
+.certs-header-divider {
+  width: 1px;
+  height: 80px;
+  background-color: var(--border);
+  flex-shrink: 0;
+}
+
+.certs-header-right { flex: 1; }
+
+.certs-desc {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--black);
+  max-width: 420px;
+  font-weight: 500;
+  border-left: 3px solid var(--red);
+  padding-left: 16px;
+}
+
+.certs-divider {
+  margin: 40px 0;
+}
+
+/* ── List ── */
+.certs-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+
+/* ── Strip ── */
+.certs-strip {
+  display: grid;
+  grid-template-columns: 180px 1px 1fr auto;
+  align-items: center;
+  gap: 0;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  cursor: default;
+  transition: all 0.35s ease;
+  background-color: #e0d7cb;
+  border-radius: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 8px;
+}
+
+.certs-strip:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.certs-strip:hover {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 -16px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border-color: transparent;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Logo ── */
+.certs-strip-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+}
+
+.certs-strip-logo {
+  transition: transform 0.3s ease;
+}
+
+.certs-strip:hover .certs-strip-logo {
+  transform: scale(1.03);
+}
+
+.certs-strip-logo img {
+  max-height: 52px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.certs-strip-logo-text {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--black);
+}
+
+.certs-strip-logo img.logo-meta,
+.certs-strip-logo img.logo-anthropic {
+  max-height: 64px;
+  max-width: 160px;
+}
+
+/* ── Vertical Divider ── */
+.certs-strip-middle {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certs-strip-vline {
+  width: 1px;
+  height: 65%;
+  min-height: 50px;
+  background-color: #b8a898;
+}
+
+/* ── Content ── */
+.certs-strip-right {
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.certs-strip-org {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 4px;
+}
+
+.certs-strip-category {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+  margin-top: 2px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.certs-strip:hover .certs-strip-category {
+  color: var(--red);
+  transform: translateY(-2px);
+}
+
+.certs-strip-bar {
+  width: 20px;
+  height: 1.5px;
+  background-color: var(--red);
+  margin: 6px 0 10px 0;
+  transition: width 0.35s ease;
+}
+
+.certs-strip:hover .certs-strip-bar {
+  width: 40px;
+}
+
+/* ── Courses ── */
+.certs-strip-courses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certs-strip-courses li {
+  font-family: var(--sans);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: color 0.25s ease;
+}
+
+.certs-strip-courses li .course-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #3a3a3a;
+  transition: color 0.25s ease;
+}
+
+.certs-strip-courses li .course-name::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--red);
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.25s ease;
+}
+
+.certs-strip-courses li .course-meta {
+  font-size: 0.72rem;
+  color: #aaaaaa;
+  padding-left: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+.certs-strip:hover .certs-strip-courses li .course-name {
+  color: var(--black);
+}
+
+.certs-strip:hover .certs-strip-courses li .course-name::before {
+  opacity: 1;
+}
+
+/* ── Number Block ── */
+.certs-strip-number-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  padding-left: 32px;
+}
+
+.certs-strip-number {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--border);
+  line-height: 1;
+  opacity: 0.7;
+  transition: color 0.35s ease, opacity 0.35s ease;
+}
+
+.certs-strip:hover .certs-strip-number {
+  color: var(--red);
+  opacity: 1;
+}
+
+.certs-strip-number-line {
+  width: 28px;
+  height: 2px;
+  background-color: var(--border);
+  transition: background-color 0.35s ease, width 0.35s ease;
+}
+
+.certs-strip:hover .certs-strip-number-line {
+  background-color: var(--red);
+  width: 44px;
+}
+
+/* ── CTA ── */
+.certs-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.certs-cta-btn {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 16px 40px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.certs-cta-btn:hover {
+  background-color: var(--red);
+}
