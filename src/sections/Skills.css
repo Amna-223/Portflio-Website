@@ -58,13 +58,6 @@
   color: var(--red);
 }
 
-/* .skills-header-divider {
-  width: 1px;
-  height: 80px;
-  background-color: var(--border);
-  flex-shrink: 0;
-} */
-
 .skills-header-right {
   flex: 1;
 }

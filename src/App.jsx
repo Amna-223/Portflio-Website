@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./sections/Hero"
 import About from "./sections/About"
 import Skills from "./sections/Skills"
+import FeaturedProjects from './sections/FeaturedProject'
 
 function App(){
   return (
@@ -14,6 +15,7 @@ function App(){
             <Hero />
             <About />
             <Skills />
+            <FeaturedProjects />
           </div>
         }>
         </Route>
