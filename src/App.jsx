@@ -5,6 +5,7 @@ import About from "./sections/About"
 import Skills from "./sections/Skills"
 import FeaturedProjects from './sections/FeaturedProject'
 import Certificates from './sections/Certificates'
+import Experience from './sections/Experience'
 
 function App(){
   return (
@@ -18,6 +19,7 @@ function App(){
             <Skills />
             <FeaturedProjects />
             <Certificates />
+            <Experience />
           </div>
         }>
         </Route>

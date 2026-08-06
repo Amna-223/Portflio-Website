@@ -1,0 +1,247 @@
+.exp {
+  padding: 60px 60px 80px 60px;
+  background-color: #92212e;
+}
+
+/* ── Header ── */
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 8px;
+}
+
+.exp-header-left { flex-shrink: 0; }
+
+.exp-intro-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.exp-intro-hr {
+  height: 1px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.exp-intro-diamond {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.6rem;
+}
+
+.exp-intro-text {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #92212e;
+  background-color: #f5c0c0;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.exp-title {
+  font-family: var(--serif);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.exp-title-dot { color: #f5c0c0; }
+
+.exp-header-divider {
+  width: 1px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.exp-header-right { flex: 1; }
+
+.exp-desc {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 420px;
+  font-weight: 500;
+  border-left: 3px solid rgba(255, 255, 255, 0.4);
+  padding-left: 16px;
+}
+
+.exp-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 24px 0;
+}
+
+/* ── List ── */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Strip ── */
+.exp-strip {
+  display: grid;
+  grid-template-columns: 160px 1px 1fr;
+  align-items: center;
+  padding: 36px 28px;
+  background-color: #faf8f5;
+  border: none;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.exp-strip::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background-color: #92212e;
+  border-radius: 0;
+  transition: height 0.4s ease;
+}
+
+.exp-strip:hover::before {
+  height: 100%;
+}
+
+.exp-strip:hover {
+  background-color: #ffffff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* ── Left — Year ── */
+.exp-strip-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding-right: 32px;
+}
+
+.exp-year {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #e0c8c8;
+  line-height: 1;
+  transition: color 0.35s ease;
+}
+
+.exp-strip:hover .exp-year {
+  color: #92212e;
+}
+
+.exp-status {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #92212e;
+}
+
+/* ── Middle ── */
+.exp-strip-middle {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-strip-vline {
+  width: 1px;
+  height: 65%;
+  min-height: 60px;
+  background-color: #d4c9b8;
+}
+
+/* ── Right — Content ── */
+.exp-strip-right {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-company {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+.exp-role {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.exp-strip:hover .exp-role {
+  color: #92212e;
+}
+
+.exp-bar {
+  width: 24px;
+  height: 2px;
+  background-color: #92212e;
+  margin: 4px 0 8px 0;
+  transition: width 0.35s ease;
+}
+
+.exp-strip:hover .exp-bar {
+  width: 48px;
+}
+
+.exp-description {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: #5a5a5a;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* ── Pills ── */
+.exp-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.exp-pill {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--black);
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.exp-strip:hover .exp-pill {
+  border-color: #92212e;
+  color: #92212e;
+}
