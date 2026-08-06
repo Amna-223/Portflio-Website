@@ -52,9 +52,6 @@ const Experience = () => {
           </div>
         ))}
       </div>
-
-      <div className="exp-divider"></div>
-
     </section>
   )
 }

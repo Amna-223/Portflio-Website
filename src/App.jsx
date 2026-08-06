@@ -6,6 +6,7 @@ import Skills from "./sections/Skills"
 import FeaturedProjects from './sections/FeaturedProject'
 import Certificates from './sections/Certificates'
 import Experience from './sections/Experience'
+import CTA from './sections/CTA'
 
 function App(){
   return (
@@ -20,6 +21,7 @@ function App(){
             <FeaturedProjects />
             <Certificates />
             <Experience />
+            <CTA />
           </div>
         }>
         </Route>

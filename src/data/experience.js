@@ -19,11 +19,11 @@ export const experiences = [
   },
   {
     id: 3,
-    year: '2023',
+    year: '2024',
     status: 'Present',
     company: 'COMSATS University Islamabad',
     role: 'BS Computer Science',
     description: 'Building a strong foundation in computer science while maintaining excellent academic performance and developing real-world software projects.',
-    skills: ['CGPA 3.93/4.00', 'PM Laptop Scheme', 'Software Engineering', 'Projects'],
+    skills: ['CGPA 3.88/4.00', 'PM Laptop Scheme', 'Software Engineering', 'Projects'],
   },
 ]
