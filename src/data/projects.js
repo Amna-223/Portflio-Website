@@ -1,3 +1,11 @@
+import emailImg from '../assets/images/email.png'
+import hospitalImg from '../assets/images/hospital.png'
+import houseImg from '../assets/images/house.png'
+import travelImg from '../assets/images/travel-dashboard.png'
+import weatherImg from '../assets/images/weather.png'
+import escapeImg from '../assets/images/escape.png'
+
+
 export const projects = [
   {
     id: 1,
@@ -9,7 +17,7 @@ export const projects = [
     comingSoon: false,
     github: 'https://github.com/Amna-223',
     demo: null,
-    thumbnail: '/src/assets/images/email.png',
+    thumbnail: emailImg,
     screenshots: [],
     tech: ['Python', 'BeautifulSoup', 'Scrapy', 'Requests', 'Regex', 'CSV'],
     overview: 'A Python-based automation tool that crawls websites and extracts valid email addresses using multi-page scraping and regex validation.',
@@ -31,7 +39,7 @@ export const projects = [
     comingSoon: false,
     github: 'https://github.com/Amna-223',
     demo: null,
-    thumbnail: '/src/assets/images/hospital.png',
+    thumbnail: hospitalImg,
     screenshots: [],
     tech: ['React', 'Node.js', 'Express', 'MySQL'],
     overview: 'A complete hospital management system handling patients, doctors and appointments with secure role-based access control.',
@@ -53,7 +61,7 @@ export const projects = [
     comingSoon: false,
     github: 'https://github.com/Amna-223',
     demo: null,
-    thumbnail: '/src/assets/images/house.png',
+    thumbnail: houseImg,
     screenshots: [],
     tech: ['Python', 'Scikit-learn', 'Linear Regression', 'Pandas', 'NumPy', 'Matplotlib'],
     overview: 'An ML model trained on real estate data to predict property prices accurately using feature engineering and regression.',
@@ -75,7 +83,7 @@ export const projects = [
     comingSoon: false,
     github: 'https://github.com/Amna-223',
     demo: null,
-    thumbnail: "/src/assets/images/travel-dashboard.png",
+    thumbnail: travelImg,
     screenshots: [],
     tech: ['React', 'JavaScript', 'CSS3', 'Responsive Design'],
     overview: 'A modern travel dashboard that helps users manage their trips, view analytics and handle bookings in one place.',
@@ -97,7 +105,7 @@ export const projects = [
     comingSoon: false,
     github: 'https://github.com/Amna-223',
     demo: null,
-    thumbnail: "/src/assets/images/weather.png",
+    thumbnail: weatherImg,
     screenshots: [],
     tech: ['React', 'OpenWeather API', 'Axios', 'JavaScript'],
     overview: 'A weather app that fetches real-time data from OpenWeatherMap API with a clean minimal design.',
@@ -119,7 +127,7 @@ export const projects = [
     comingSoon: false,
     github: 'https://github.com/Amna-223',
     demo: null,
-    thumbnail: "/src/assets/images/escape.png",
+    thumbnail: escapeImg,
     screenshots: [],
     tech: ['Java', 'OOP', 'Inheritance', 'Polymorphism'],
     overview: 'A text-based adventure escape game demonstrating core Java and object oriented programming concepts.',
