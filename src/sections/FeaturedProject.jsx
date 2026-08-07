@@ -37,9 +37,6 @@ const FeaturedProjects = () => {
                                 <span>{project.title}</span>
                             </div>
                             )}
-                            <div className="featured-card-overlay">
-                                <Link to={`/projects/${project.slug}`} className="featured-card-view">View Project →</Link>
-                            </div>
                         </div>
                     
                         <div className="featured-card-body">
