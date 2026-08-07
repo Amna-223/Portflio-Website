@@ -55,7 +55,6 @@ const Skills = () => {
                             </div>
                             <div className='skills-card-footer'>
                                 <span>{skill.items.length} Technologies</span>
-                                <span className='skills-card-arrow'>→</span>
                             </div>
                         </div>
                     )

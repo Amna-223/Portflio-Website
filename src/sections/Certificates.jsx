@@ -76,12 +76,6 @@ const Certificates = () => {
 
       <div className="certs-divider"></div>
 
-      <div className="certs-cta">
-        <Link to="/certificates" className="certs-cta-btn">
-          View All Certificates →
-        </Link>
-      </div>
-
     </section>
   )
 }

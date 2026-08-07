@@ -4,10 +4,11 @@ import "./Navbar.css"
 
 const Navbar = () => {
     const navLinks = [
-        {name: "Home" , path: "/"},
+        {name: "Home" , path: '#hero'},
         {name: "About" , path: "/#about"}, 
-        {name: "Projects" , path: "/projects"}, 
-        {name: "Certificates" , path: "/certificates"},
+        {name: "Skills" , path: "/#skills"},
+        {name: "Projects" , path: "/#projects"}, 
+        {name: "Certificates" , path: "/#certificates"},
         {name: "Experience" , path: "/#experience"},
         {name: "Contact" , path: "/#contact"}
     ]
@@ -23,18 +24,14 @@ const Navbar = () => {
                 {navLinks.map((link) => {
                     return (
                         <li key = {link.name}>
-                            {link.path.startsWith('/#') ? (
-                                <a href={link.path}>{link.name}</a>
-                            ) : (
-                                <Link to={link.path}>{link.name}</Link>
-                            )}
+                            {<a href={link.path}>{link.name}</a>}
                         </li>
                     )
                 })}
             </ul>
 
             <div className="navbar-resume">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"> Resume ↓</a>
+                <a href="/resume.pdf" download="Amna_Saeed_Resume.pdf"> Resume ↓</a>
             </div>
         </nav>
     )

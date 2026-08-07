@@ -3,7 +3,7 @@ import './Hero.css'
 
 const Hero = () => {
     return (
-        <section className='hero'>
+        <section className='hero' id="hero">
             
             <div className='hero-edition'>
                 <span>THE DEVELOPER'S EDITION</span>
@@ -31,7 +31,7 @@ const Hero = () => {
 
                     <div className="hero-buttons">
                         <a href="#projects" className="btn-primary">View Projects →</a>
-                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary">Download Resume ↓</a>
+                        <a href="/resume.pdf" download="Amna_Saeed_Resume.pdf" className="btn-secondary">Download Resume ↓</a>
                     </div>
                 </div>
 

@@ -75,10 +75,6 @@ const FeaturedProjects = () => {
                     </div>
                 ))}
             </div>
-
-            <div className="featured-cta">
-                <Link to="/projects" className="featured-cta-btn">Explore All Projects → </Link>
-            </div>
         </section>
     )
 }

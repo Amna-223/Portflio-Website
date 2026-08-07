@@ -43,7 +43,7 @@ const CTA = () => {
 
         <div className="cta-buttons">
           <a href="mailto:aamnahsaeed223@gmail.com" className="cta-btn-primary">Send Email →</a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-btn-secondary">Download Resume ↓</a>
+          <a href="/resume.pdf" download="Amna_Saeed_Resume.pdf" className="cta-btn-secondary">Download Resume ↓</a>
         </div>
 
         <div className="cta-dot-grid">
